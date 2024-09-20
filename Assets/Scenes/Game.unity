@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a24cc185a517464d993c80eb5b88ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tankPrefab: {fileID: 4816509795856694430, guid: 096b504ebff3f134bbe40932f9d0e3b5,
+  tankView: {fileID: 2537888769948469090, guid: 096b504ebff3f134bbe40932f9d0e3b5,
     type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
