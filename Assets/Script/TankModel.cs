@@ -2,15 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankModel
+public class TankModel 
 {
     private TankController tankController;
-    public float movementSpeed;
-    public float rotationSpeed;
-    public TankModel(float _movement, float _rotation)
+
+    public TankModel()
     {
-        movementSpeed = _movement;
-        rotationSpeed = _rotation;
+       
     }
 
     public void SetTankController(TankController _tankController)
