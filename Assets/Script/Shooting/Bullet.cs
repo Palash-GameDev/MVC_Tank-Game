@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    private Rigidbody rb;
     public ParticleSystem ps;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +26,7 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
         ps.Play();
-        Destroy(gameObject, 0.7f);
+        rb.velocity = Vector3.zero;
+        Destroy(gameObject, 0.5f);
     }
 }
