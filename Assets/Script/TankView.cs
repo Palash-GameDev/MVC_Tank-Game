@@ -8,6 +8,7 @@ public class TankView : MonoBehaviour
     public Rigidbody rb;
     public MeshRenderer[] childMeshes;
 
+
     private float movement;
     private float rotation;
 
@@ -16,12 +17,14 @@ public class TankView : MonoBehaviour
     {
         GameObject cam = GameObject.Find("Main Camera");
         cam.transform.SetParent(transform);
-        cam.transform.position = new Vector3(0f, 3f, -4f);
+        cam.transform.position = new Vector3(0f, 9f, -10f);
+        cam.transform.rotation = Quaternion.Euler(20f, 0f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         Movement();
 
         if (movement != 0 || rotation != 0)
